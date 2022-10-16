@@ -1,0 +1,25 @@
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
+  http2:
+    enabled: true
+
+spring:
+  application:
+    name: devdojo-rabbitmq-stream-base    
+# ==============================================================
+# = RABBITMQ
+# ==============================================================
+  rabbitmq:
+    host: localhost
+    port: 5672
+    password: guest
+    username: guest
+    virtual-host: /    
+
